@@ -1,0 +1,493 @@
+* {
+  font-family: 'Cute Font', 'Indie Flower', cursive;
+  list-style: none;
+  /* 숫자, 불릿기호 사라짐 */
+}
+
+ul {
+  padding-left: 0px;
+  /* 없어진 불릿기호 공백제거 */
+}
+
+a {
+  text-decoration: none;
+  /* 링크 밑줄 없애기 */
+}
+
+#not-provided {
+  display: none;
+  /* 공간 없음 */
+  /* visibility: hidden; 공간은 존재*/
+}
+
+@media (max-width: 575px) {
+  header,
+  main,
+  article,
+  footer {
+    display: none !important;
+  }
+  #not-provided {
+    display: block;
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* header */
+
+header > nav > .icon-container {
+  margin-left: 12rem;
+}
+/* icon배치 */
+
+header > nav > .navbar-nav {
+  margin-right: 12rem;
+}
+
+header > nav {
+  background-color: darksalmon;
+}
+
+header > nav > .icon-container > span {
+  font-size: 3rem;
+}
+
+header > ul {
+  font-size: 1.4rem;
+}
+
+@media (max-width:992px) {
+  header > nav > .icon-container {
+    margin-left: 12rem;
+  }
+  header > nav > .navbar-nav {
+    margin-right: 12rem;
+  }
+}
+
+#my-intro,
+#frontpage {
+  padding-top: 5rem;
+}
+
+#frontpage > .title-container > h2,
+.info-text-container h2 {
+  color: orange;
+}
+/* rgb(r, g, b, a(투명도)) */
+
+#frontpage > .title-container > h3,
+.info-text-container h3 {
+  color: coral;
+}
+
+#frontpage > .title-container > a > .btn,
+skills, 
+#contact .icon-container {
+  background-color: salmon;
+}
+
+#frontpage > .title-container > ul {
+  color: gray;
+} 
+
+h2,
+h3,
+header,
+#my-intro > div > .info-text-container .column-name,
+#my-intro > div > .info-text-container .column-date {
+  font-weight: bold;
+}
+
+#my-intro,
+#frontpage {
+  background-color: antiquewhite;
+  display: flex;
+  height: 100vh;
+}
+
+#frontpage > .title-container {
+  flex: 1;
+}
+
+.frontpage-img-container {
+  flex: 3;
+  background-image: linear-gradient(to left, transparent, antiquewhite), url('img/data-analyst-colleagues-in-office.jpeg');
+  background-size: cover;
+}
+
+#frontpage > nav {
+  width: 100px;
+}
+
+#frontpage > nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+#frontpage > nav > li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* #frontpage > nav > .github-icon {
+  height: 2.8rem;
+} */
+
+#frontpage > .title-container {
+  padding-left: 10rem;
+  padding-top: 10rem;
+}
+
+#frontpage > .title-container > h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#frontpage > .title-container > ul {
+  margin-bottom: 30px;
+}
+
+#frontpage > .title-container > button {
+  margin-right: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+@media (max-width:992px) {
+  #frontpage > nav > li {
+    display: none;
+  }
+
+  #frontpage > .title-container {
+    padding-left: 1rem;
+    padding-top: 8rem;
+  }
+
+  #frontpage h2 {
+    font-size: 3rem;
+  }
+
+  #frontpage h3 {
+    font-size: 2rem;
+  }
+
+  #frontpage ul {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width:1200px){
+  .frontpage-img-container{
+      display: none;
+  }
+}
+
+
+/* intro */
+
+#my-intro {
+  display: flex;
+  align-items: center;
+}
+
+#my-intro > .my-intro-layout-parent {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+#my-inrto .profile-img-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-intro .info-text-container {
+  flex: 2;
+  padding-left: 50px;
+}
+
+#my-intro .profile-img {
+  height: 36rem;
+  width: 23rem;
+  background-image: url('img/realprofile.jpg');
+  background-size: cover;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#my-intro .info-text-container .top-text {
+  margin-bottom: 40px;
+}
+
+@media(max-width:992px) {
+  #my-intro .my-intro-layout-parent {
+    flex-direction: column;
+  }
+}
+
+#my-intro .info-text-container .contact-info-ul {
+  height: 200px;
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+
+#my-intro .my-interests-container > h2 {
+  margin-bottom: 20px;
+}
+
+#my-intro .my-interests-container > ul {
+  display: flex;
+}
+
+#my-intro .my-interests-container li {
+  margin-right: 4rem;
+  width: 2rem;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+#my-intro .contact-info-ul .row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#my-intro .contact-info-ul .icon-container {
+  flex: 2;
+}
+
+#my-intro .contact-info-ul .column-name {
+  flex: 4;
+}
+
+#my-intro .contact-info-ul .column-date {
+  flex: 5;
+}
+
+#my-intro .info-text-container h3 {
+  margin-top: 100px;
+}
+
+/* skills */
+
+#skills > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#skills > h2 {
+  color: orange;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#skills .card {
+  width: 20rem;
+  margin-bottom: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#skills .card-header {
+  font-size: 1.8rem;
+}
+
+#skills ul img {
+  height: 4rem;
+  margin-top: 10px;
+}
+
+
+/* education & project */
+
+#project h2 {
+  color: orange;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#project > .edu-project-container {
+  display: flex;
+}
+
+#project .edu-container {
+  flex: 2
+}
+
+#project .project-container {
+  flex: 1;
+}
+
+@media (max-width:992px) {
+  #project > .edu-project-container {
+    flex-direction: column;
+  }
+}
+
+#project .edu-project-container h3 {
+  display: flex;
+  align-items: center;
+}
+
+#project .edu-project-container h3 .material-symbols-outlined {
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+#project .date {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#project .date-data {
+  margin-left: 20px;
+}
+
+#project li {
+  border-left: 5px solid brown;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* contact */
+
+#contact {
+  margin-bottom: 80px;
+}
+
+#contact h2, 
+#contact h3 {
+  text-align: center;
+  color: orange;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact h3 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  color: salmon;
+}
+
+#contact .contact-container {
+  display: flex;
+}
+
+#contact .input-container {
+  flex: 2;
+}
+
+#contact .name-email-container, 
+#contact .title-container,
+#contact .content-container {
+  margin-bottom: 40px;
+}
+
+#contact .name-email-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-container, .email-container {
+  flex: 1;
+}
+
+.name-container {
+  margin-right: 20px;
+}
+
+.email-container {
+  margin-right: 20px;
+}
+
+#contact .contact-info-container {
+  flex: 1;
+}
+
+#contact-input-content {
+  height: 300px;
+}
+
+#contact > div > div.input-container button {
+  margin-right: 20px;
+  border-radius: 20px;
+  height: 50px;
+  width: 100%;
+  color: firebrick;
+  background-color: salmon;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width:1000px) {
+  .contact-info-container {
+    display: none;
+  }
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+#contact .icon-container {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contact .icon-container span {
+  font-size: 2rem;
+  color: white;
+}
+
+.category-name {
+  font-size: 1.5rem;
+}
+
+
+/* footer */
+
+footer {
+  height: 55px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width:768px) {
+  footer {
+    font-size: 1rem;
+  }
+}
